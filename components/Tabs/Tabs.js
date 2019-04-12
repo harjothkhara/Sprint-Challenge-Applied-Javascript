@@ -69,4 +69,13 @@ class TabCard {
 - In your .forEach() method's callback function, return a new instance of TabLink and pass in each tab as a parameter
 
 */
-let tabs = document.querySelectorAll();
+
+//Step 1: Get the original DOM elements
+let tabs = document.querySelectorAll('tab');
+// console.log(tabs);
+
+//Step 2: Return a newly constructed DOM element
+tabs.forEach(function(tab){
+  return new TabLink(tab); 
+})
+// tabs.forEach(tab => new TabLink(tab));
