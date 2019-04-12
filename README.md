@@ -32,13 +32,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+An object representation of the html elements of a webpage. DOM — (Document) is the representation of our html code we wrote in the browser. DOM is the API that bridges the html to the browser--> In the browser our html code becomes (Objects). Each object is a node and has different types: element (head, body, h1 etc), text ( “i’m a DOM”) …each type has properties/methods attached to it which we can use to manipulate the DOM in JS -->(Model) allows us to recreate everything over again.
+
 2. What is an event?
+
+Any interaction a user has with a webpage that the browser tracks e.g clicking/double clicking a mouse button, scrolling the pafge, pressing a keyboard button, moving the mouse...
 
 3. What is an event listener?
 
+Specific elements that listen to/for specific events to occure before trigerring (in the form of a callback when the event occurs).  For example, we can use the .addEventListener method on selected elements and give it arguments to watch for and execute against. 
+
 4. Why would we convert a NodeList into an Array?
 
+Although you can use forEach to iterate over, NoteList is not an array and such doesn't have the full properties of one. We would convert over to an array to use array methods. You can use Array.from() to achieve this.
+
 5. What is a component?
+
+Combinational pieces of code: HTML, CSS and JS that can be used over again in a website or app.
 
 ### Git Set up
 
